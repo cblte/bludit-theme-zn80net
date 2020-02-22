@@ -168,7 +168,9 @@ article iframe {
   max-width: 100%;
 }
 
-
+article .datenschutz-top-link {
+  font-size: 0.8em;
+}
 
 .pagination {
   margin: auto;
