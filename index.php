@@ -26,7 +26,12 @@
   // If the user is watching a particular page/post the variable takes the value "page"
   // If the user is watching the frontpage the variable takes the value "home"
   if ($WHERE_AM_I == 'page') {
-    include(THEME_DIR_PHP.'page.php');
+    // fix coming from https://forum.bludit.org/viewtopic.php?p=7049&sid=64c6ba5330df05a27b5d19c7afad769f#p7049
+    if ($page->slug() == 'archive') {
+      include(THEME_DIR_PHP.'archive.php');
+    } else {
+      include(THEME_DIR_PHP.'page.php');
+      }
   } else {
     include(THEME_DIR_PHP.'home.php');
   } 
