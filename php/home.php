@@ -27,13 +27,11 @@
 		<!-- Breaked content -->
 		<?php echo $page->contentBreak(); ?>
 
-		<?php if ($page->readMore()) : // Read more" button 
-		?>
-			<a href="<?php echo $page->permalink(); ?>"><?php echo $L->get('Read more'); ?></a>
+		<?php if ($page->readMore()) : // Read more" button ?>
+		<a href="<?php echo $page->permalink(); ?>" title="Permalink: <?php echo $page->title(); ?>"><?php echo $L->get('Read more'); ?></a>
 		<?php endif ?>
 
-		<?php Theme::plugins('pageEnd'); // Load Bludit Plugins: Page End 
-		?>
+		<?php Theme::plugins('pageEnd'); // Load Bludit Plugins: Page End ?>
 	</article>
 	<hr />
 <?php endforeach; ?>
