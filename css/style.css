@@ -1,0 +1,186 @@
+/*!
+Perfect Mother Fucking Website v1.0.0 with a minimal things for links
+changes 2020 by cblte <https://github.com/cblte/bludit-theme-pmfws>
+
+Licensed under the WTFPL License.
+https://de.wikipedia.org/wiki/WTFPL
+
+Inspired by
+- http://motherfuckingwebsite.com/
+- http://bettermotherfuckingwebsite.com/
+- https://perfectmotherfuckingwebsite.com/
+- https://thebestmotherfucking.website
+*/
+
+html {
+  overflow-y: scroll; /* hack by https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/ */
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font: 1.125em/1.5 'Avenir Next', 'Helvetica Neue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #30302F;
+    background-color: #F4F4F2;
+}
+
+/* BLOCK STYLES */ 
+header {
+  margin: auto;
+  display: block;
+}
+
+main {
+  max-width: 42em;
+  display: block;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+footer {
+  max-width: 42em;
+  display: block;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0 0 0.3em 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+a, a:visited {
+  color: #E71D36;;
+}
+
+a:hover {
+  color: #E71D36;
+}
+
+/* LOOKING GOOD */
+/* ********************************* */
+
+.site-header {
+  background-color: #011627;
+	border-bottom: 0.3em solid #E71D36;
+  padding: 0 1em 1em 1em;
+  margin-bottom: 2em;
+}
+
+.site-branding {
+  max-width: 42em;
+  margin: auto;
+}
+
+.site-title {
+  padding-top: 0.5em;
+	margin: 0;
+	font-weight: normal;
+  font-size: 2em;
+
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #E71D36;
+}
+
+.site-slogan {
+  width: 21em;
+  padding: 0;
+  margin: 0;
+  color: #2EC4B6;
+}
+
+
+/* SITE NAVIGATION */
+/* ********************************* */
+.site-navigation {
+  max-width: 42em;
+  margin: auto;
+}
+
+.site-navigation p {
+  margin: 0;
+  padding: 0;
+}
+
+.site-static-link, .site-social-link {
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+img.site-social-svg-icon {
+	width: 1rem;
+	height: 1rem;
+	padding-bottom: 2px;
+}
+
+.site-social-label {
+  display: none;
+}
+
+/* ARTICLE STYLES */
+/* ********************************* */
+
+article {
+  display: block;
+  line-height: 1.6;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article h2 {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article h2 a, article h2 a:visited, article h2 a:hover {
+  text-decoration: none;
+  color: #011627
+}
+
+article.link h2 {
+  font-size: 1.125em;
+}
+
+article.link h2 a, article.link h2 a:visited, article.link h2 a:hover {
+  text-decoration: underline;
+  color: #E71D36;
+}
+
+article iframe {
+  max-width: 100%;
+}
+
+
+
+.pagination {
+  margin: auto;
+  display: block;
+  width: 20em;
+}
+
+.pagination .next {
+  float: left;
+}
+
+.pagination .prev {
+  float: right;
+}
+
