@@ -51,10 +51,11 @@ h3 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   vertical-align: middle;
   border-style: none;
+  
 }
 
 blockquote {
@@ -164,6 +165,14 @@ article.link h2 a, article.link h2 a:visited, article.link h2 a:hover {
   color: #E71D36;
 }
 
+article img {
+  border: 1px solid #ccc;
+  margin-left: auto;
+  margin-right: auto; /* center image */
+  display: block;
+
+}
+
 article iframe {
   max-width: 100%;
 }
@@ -171,6 +180,10 @@ article iframe {
 article .datenschutz-top-link {
   font-size: 0.8em;
 }
+
+
+/* PAGENATION BELOW */
+/* ********************************* */
 
 .pagination {
   margin: auto;
