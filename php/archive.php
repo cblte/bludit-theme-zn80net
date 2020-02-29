@@ -1,27 +1,27 @@
-<ul class="home article list"> 
-<?php foreach ($content as $page): ?>
-  <li>
-    <small class="home article date"><?php echo $page->date(); ?> &ndash; </small> <a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a>
-  </li>
-<?php endforeach; ?>
+<ul class="archive-list"> 
+<?php
+	$pageNumber = 1; // Page number of the paginator, the first page is 1
+	$numberOfItems = -1; // The value -1 tell to Bludit to returns all the pages on the system
+	$onlyPublished = true; // Only get the pages with the satus published
+	// Get the list of keys of pages
+	$items = $pages->getList($pageNumber, $numberOfItems, $onlyPublished);
+
+	foreach ($items as $key) {
+		// buildPage function returns a Page-Object
+		$archivePage = buildPage($key);
+
+?>
+	<li>
+		<small class="archive-article-date"><?php echo $archivePage->date(); ?> &ndash; </small> 
+			<a href="<?php echo $archivePage->permalink(); ?>" title="Permalink: <?php echo $archivePage->title(); ?>">
+				<?php echo $archivePage->title(); ?>
+			</a>
+		</small>
+	</li>	
+<?php 
+	} 
+?>
 </ul>
 
-<!-- Pagination -->
-<?php if (Paginator::numberOfPages()>1): ?>
-<nav class="pagination">
-	<!-- Previous button -->
-	<?php if (Paginator::showPrev()): ?>
-		<a class="page-link prev" href="<?php echo Paginator::previousPageUrl() ?>" tabindex="-1">&#9664; <?php echo $L->get('Previous'); ?></a>
-	<?php endif; ?>
-
-	<?php if (Paginator::currentPage()==-1) { ?>
-		<!-- Home button -->
-		<!-- a class="page-link" href="<?php echo Theme::siteUrl() ?>">Home</a -->
-	<?php } ?>
-
-	<!-- Next button -->
-	<?php if (Paginator::showNext()): ?>
-		<a class="page-link next" href="<?php echo Paginator::nextPageUrl() ?>"><?php echo $L->get('Next'); ?> &#9658;</a>
-	<?php endif; ?>
-</nav>
-<?php endif ?>
+<!-- Load Bludit Plugins: Page End -->
+<?php Theme::plugins('pageEnd'); ?>
