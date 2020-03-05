@@ -1,14 +1,10 @@
-
 <!-- A single blog post -->
 <article <?php if ($page->custom('link')) {?>class="link" <?php } ?>>
-
 <!-- Load Bludit Plugins: Page Begin -->
 <?php Theme::plugins('pageBegin');  ?>
-
 <?php if ($page->coverImage()): ?>
 	<img class="" alt="Cover Image for <?php echo $page->title(); ?>" src="<?php echo $page->coverImage(); ?>"/>
 <?php endif ?>
-
 	<h2>
 		<?php if ($page->custom('link')) { ?>
 		<a href="<?php echo $page->custom('link'); ?>"><?php echo $page->title(); ?></a> 
@@ -17,18 +13,15 @@
 		<a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a>
 		<?php } ?>
 	</h2>
-    
 	<?php if (!$page->isStatic() && !$url->notFound()):  ?>
     <small>
 		<a href="<?php echo $page->permalink(); ?>" title="Permalink: <?php echo $page->title(); ?>"><?php echo $page->date(); ?></a> 
 		&ndash; 
 		<?php echo $L->get('Reading time') . ': ' . $page->readingTime(); ?>
 	</small>
-    <?php endif ?>
-	 
+	<?php endif ?>
 	<!-- Full content -->
 	<?php echo $page->content(); ?>
-
   <!-- Load Bludit Plugins: Page End -->
   <?php Theme::plugins('pageEnd'); ?>
 </article>

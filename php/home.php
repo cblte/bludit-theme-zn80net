@@ -1,10 +1,7 @@
 <?php foreach ($content as $page) : ?>
 <!-- A single blog post on the homepage -->
 <article <?php if ($page->custom('link')) {?>class="link" <?php } ?>>
-
-<!--
 <?php 
-
 // CHECK IF PLUGIN IS LOADED
 $pageUuid = $page->getValue('uuid');
 $commentCounter = 0;
@@ -20,16 +17,12 @@ if ($commentCounter == 0) {
 } else {
 	$commentText = sprintf($L->get('comments'), $commentCounter );
 }
-
 ?>
--->
 <!-- Load Bludit Plugins: Page Begin -->
 <?php Theme::plugins('pageBegin'); ?>
-
 <?php if ($page->coverImage()) : ?>
 	<img class="coverImage" alt="Cover Image for <?php echo $page->title(); ?>" src="<?php echo $page->coverImage(); ?>" />
 <?php endif ?>
-
 	<h2>
 		<?php if ($page->custom('link')) { ?>
 		<a href="<?php echo $page->custom('link'); ?>"><?php echo $page->title(); ?></a> 
@@ -38,8 +31,6 @@ if ($commentCounter == 0) {
 		<a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a>
 		<?php } ?>
 	</h2>
-
-
 	<small>
 		<a href="<?php echo $page->permalink(); ?>" title="Permalink: <?php echo $page->title(); ?>"><?php echo $page->date(); ?></a> 
 		&ndash; 
@@ -47,8 +38,6 @@ if ($commentCounter == 0) {
 		&ndash; 
 		<a href="<?php echo $page->permalink(); ?>#comments"><?php echo $commentText ?></a>
 	</small>
-
-
 	<!-- Breaked content -->
 	<?php echo $page->contentBreak(); ?>
 	<?php if ($page->readMore()) : // Read more" button ?>
@@ -56,8 +45,6 @@ if ($commentCounter == 0) {
 	<?php endif ?>
 	<?php Theme::plugins('pageEnd'); // Load Bludit Plugins: Page End ?>
 </article>
-
 <?php endforeach; ?>
-
 <!-- including pagination -->
 <?php include(THEME_DIR_PHP . 'pagination.php'); ?>
