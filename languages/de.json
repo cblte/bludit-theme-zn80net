@@ -1,0 +1,12 @@
+{
+    "theme-data":
+    {
+        "name": "zn80.net",
+        "description": "Theme für Blogger. Gemacht für zn80.net"
+    },
+    "next": "Frühere Artikel",
+    "previous": "Neuere Artikel",
+    "no-comments": "Keine Kommentare",
+    "one-comment": "1 Kommentar",
+    "comments": "%d Kommentare"
+}
