@@ -51,10 +51,11 @@ h3 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   vertical-align: middle;
   border-style: none;
+  
 }
 
 blockquote {
@@ -139,7 +140,8 @@ img.site-social-svg-icon {
 article {
   display: block;
   line-height: 1.6;
-  margin-top: 3em;
+  margin-bottom: 4em;
+  padding-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -164,6 +166,38 @@ article.link h2 a, article.link h2 a:visited, article.link h2 a:hover {
   color: #E71D36;
 }
 
+article cite {
+  font-size: small;
+  font-style: italic;
+}
+
+article img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; /* center image */
+  display: block;
+}
+
+article img.coverImage {
+  border: 0px;
+  margin-bottom: 1em;
+}
+
+article pre {
+  padding: .1em .4em;
+  margin: 0;
+  background-color: #f1f1f1;
+  border: 1px solid #000;
+}
+
+article p code {
+  padding: .1em .4em;
+  margin: 0;
+  background-color: #f1f1f1;
+  border: 1px solid #000;
+  word-break: keep-all;
+}
+
 article iframe {
   max-width: 100%;
 }
@@ -171,6 +205,15 @@ article iframe {
 article .datenschutz-top-link {
   font-size: 0.8em;
 }
+
+article embetty-tweet {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* PAGENATION BELOW */
+/* ********************************* */
 
 .pagination {
   margin: auto;
