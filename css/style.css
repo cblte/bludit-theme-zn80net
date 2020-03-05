@@ -166,6 +166,7 @@ article.link h2 a, article.link h2 a:visited, article.link h2 a:hover {
   color: #E71D36;
 }
 
+<<<<<<< HEAD
 article cite {
   font-size: small;
   font-style: italic;
@@ -210,7 +211,6 @@ article embetty-tweet {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* PAGENATION BELOW */
 /* ********************************* */
