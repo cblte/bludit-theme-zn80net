@@ -22,3 +22,6 @@
 	} 
 ?>
 </ul>
+
+<!-- Load Bludit Plugins: Page End -->
+<?php Theme::plugins('pageEnd'); ?>
