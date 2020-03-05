@@ -1,8 +1,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta data-embetty-server="https://embetty.zn80.net/">
+  <script async src="embetty.js"></script>
 
   <?php echo Theme::headTitle(); ?>
   <?php echo Theme::headDescription(); ?>
+
+
+  <!-- Load Bludit Plugins: Site head -->
+  <?php Theme::plugins('siteHead'); ?>
   <?php echo Theme::css('css/style.css'); ?>
   
 
@@ -12,5 +19,4 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <!-- Load Bludit Plugins: Site head -->
-  <?php Theme::plugins('siteHead'); ?>
+  
