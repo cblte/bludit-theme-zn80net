@@ -3,5 +3,10 @@
     {
         "name": "zn80net",
         "description": "Theme for bloggers. Made for zn80.net."
-    }
+    },
+    "next": "Older Articles",
+    "previous": "Newer Articles",
+    "no-comments": "No Comments",
+    "one-comment": "1 Comment",
+    "comments": "%d Comments"
 }
