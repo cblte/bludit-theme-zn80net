@@ -7,6 +7,7 @@ TODO txt
 DONE
 ----
 
+- breit von 42m auf 620px reduziert. das ist viel aber war schon nötig. dadurch sind nun nur noch maximal 75 character pro linie.
 - Style Sheet aktualisiert und das CoverImage etwas nach unten geschoben. 
 - CoverImage guckt nun links und rechts ein wenig über die Artikel-Breit hinaus. Halt ein "Cover Image"
 - Archive Seite erstellt
