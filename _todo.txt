@@ -1,0 +1,16 @@
+TODO txt
+--------
+
+- 
+
+
+DONE
+----
+
+- Style Sheet aktualisiert und das CoverImage etwas nach unten geschoben. 
+- CoverImage guckt nun links und rechts ein wenig über die Artikel-Breit hinaus. Halt ein "Cover Image"
+- Archive Seite erstellt
+- Eingebunden
+
+
+
