@@ -18,6 +18,8 @@
 		<a href="<?php echo $page->permalink(); ?>" title="Permalink: <?php echo $page->title(); ?>"><?php echo $page->date(); ?></a> 
 		&ndash; 
 		<?php echo $L->get('Reading time') . ': ' . $page->readingTime(); ?>
+		&ndash; 
+		<a href="<?php echo $page->permalink(); ?>#comments"><?php include(THEME_DIR_PHP . 'comments-counter.php') ?></a>
 	</small>
 	<?php endif ?>
 	<!-- Full content -->
