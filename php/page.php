@@ -2,9 +2,6 @@
 <article <?php if ($page->custom('link')) {?>class="link" <?php } ?>>
 <!-- Load Bludit Plugins: Page Begin -->
 <?php Theme::plugins('pageBegin');  ?>
-<?php if ($page->coverImage()): ?>
-	<img class="" alt="Cover Image for <?php echo $page->title(); ?>" src="<?php echo $page->coverImage(); ?>"/>
-<?php endif ?>
 	<h2>
 		<?php if ($page->custom('link')) { ?>
 		<a href="<?php echo $page->custom('link'); ?>"><?php echo $page->title(); ?></a> 
@@ -21,6 +18,10 @@
 		&ndash; 
 		<a href="<?php echo $page->permalink(); ?>#comments"><?php include(THEME_DIR_PHP . 'comments-counter.php') ?></a>
 	</small>
+	<?php endif ?>
+	<?php if ($page->coverImage()) : ?>
+	<!-- Cover Image -->
+	<img class="coverImage" alt="Cover Image for <?php echo $page->title(); ?>" src="<?php echo $page->coverImage(); ?>" />
 	<?php endif ?>
 	<!-- Full content -->
 	<?php echo $page->content(); ?>

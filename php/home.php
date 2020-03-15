@@ -18,6 +18,10 @@
 		&ndash; 
 		<a href="<?php echo $page->permalink(); ?>#comments"><?php include(THEME_DIR_PHP . 'comments-counter.php') ?></a>
 	</small>
+	<?php if ($page->coverImage()) : ?>
+	<!-- Cover Image -->
+	<img class="coverImage" alt="Cover Image for <?php echo $page->title(); ?>" src="<?php echo $page->coverImage(); ?>" />
+	<?php endif ?>
 	<!-- Breaked content -->
 	<?php echo $page->contentBreak(); ?>
 	<?php if ($page->readMore()) { // Read more" button ?>
