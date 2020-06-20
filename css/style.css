@@ -35,7 +35,7 @@ header {
 
 main,
 footer {
-    max-width: 620px;
+    max-width: 640px;
     display: block;
 }
 
@@ -90,7 +90,7 @@ a:hover {
 }
 
 .site-branding {
-    max-width: 42em;
+    max-width: 640px;
     margin: auto;
 }
 
@@ -107,7 +107,7 @@ a:hover {
 }
 
 .site-slogan {
-    width: 21em;
+    width: 400px;
     padding: 0;
     margin: 0;
     color: #2EC4B6;
@@ -120,7 +120,7 @@ a:hover {
 /* ********************************* */
 
 .site-navigation {
-    max-width: 42em;
+    max-width: 640px;
     margin: auto;
 }
 
@@ -201,7 +201,7 @@ article img {
 article img.coverImage {
     margin-bottom: 1em;
     max-width: 1200px;
-    margin-left: -290px;
+    margin-left: -280px;
     margin-top: 1em;
 }
 
