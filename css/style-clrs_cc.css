@@ -1,0 +1,260 @@
+/*!
+Perfect Mother Fucking Website v1.0.0 with a minimal things for links
+changes 2020 by cblte <https://github.com/cblte/bludit-theme-pmfws>
+
+Licensed under the WTFPL License.
+https://de.wikipedia.org/wiki/WTFPL
+
+Inspired by
+- http://motherfuckingwebsite.com/
+- http://bettermotherfuckingwebsite.com/
+- https://perfectmotherfuckingwebsite.com/
+- https://thebestmotherfucking.website
+- color inspiration from http://clrs.cc
+*/
+
+html {
+    overflow-y: scroll;
+    /* hack by https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/ */
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font: 1.125em/1.5 'Avenir Next', 'Helvetica Neue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* NAVY */
+    color: #111111;
+    /* WHITE */
+    background-color: #FFFFFF;
+}
+
+
+/* BLOCK STYLES */
+
+header {
+    margin: auto;
+    display: block;
+}
+
+main {
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    max-width: 40rem;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    margin: 0 0 0.3em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+a {
+    color: #FF4136;
+    text-decoration: none;
+    transition: color .4s;
+}
+
+a:active {
+    transition: color .3s;
+}
+
+a:hover {
+    color: #FF4136;
+    text-decoration: underline;
+}
+
+
+/* ********************************* */
+
+
+/* LOOKING GOOD */
+
+.site-header {
+    background-color: #001f3f;
+    border-bottom: 0.3em solid #FF4136;
+    padding: 0 1em 1em 1em;
+    margin-bottom: 2em;
+}
+
+.site-branding {
+    max-width: 40rem;
+    margin: auto;
+}
+
+.site-title {
+    padding-top: 0.5em;
+    margin: 0;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.site-title a,
+.site-title a:hover,
+.site-title a:visited {
+    text-decoration: none;
+    color: #FF4136;
+}
+
+.site-slogan {
+    max-width: 20rem;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+
+/* ********************************* */
+
+
+/* SITE NAVIGATION */
+
+.site-navigation {
+    max-width: 40rem;
+    margin: auto;
+}
+
+.site-navigation p {
+    margin: 0;
+    padding: 0;
+}
+
+.site-static-link,
+.site-social-link {
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+img.site-social-svg-icon {
+    width: 1rem;
+    height: 1rem;
+    padding-bottom: 2px;
+}
+
+.site-social-label {
+    display: none;
+}
+
+
+/* ********************************* */
+
+
+/* ARTICLE STYLES */
+
+article {
+    display: block;
+    line-height: 1.6;
+    margin-bottom: 4em;
+    padding-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h2 {
+    margin: 0;
+    margin: 0;
+    padding: 0;
+}
+
+article h2 a,
+article h2 a:visited,
+article h2 a:hover {
+    text-decoration: none;
+    color: #011627
+}
+
+article.link h2 {
+    font-size: 1.125em;
+}
+
+article.link h2 a,
+article.link h2 a:visited,
+article.link h2 a:hover {
+    text-decoration: underline;
+    color: #FF4136;
+}
+
+article cite {
+    font-size: small;
+    font-style: italic;
+}
+
+article img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* center image */
+    display: block;
+}
+
+article img.coverImage {
+    margin-bottom: 1em;
+    max-width: 1200px;
+    margin-left: -280px;
+    margin-top: 1em;
+}
+
+article pre {
+    padding: .1em .4em;
+    margin: 0;
+    background-color: #f1f1f1;
+    border: 1px solid #000;
+}
+
+article p code {
+    padding: .1em .4em;
+    margin: 0;
+    background-color: #f1f1f1;
+    border: 1px solid #000;
+    word-break: keep-all;
+}
+
+article iframe {
+    max-width: 100%;
+}
+
+article .datenschutz-top-link {
+    font-size: 0.8em;
+}
+
+article embetty-tweet {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ********************************* */
+
+
+/* PAGENATION BELOW */
+
+.pagination {
+    margin: auto;
+    display: block;
+    width: 20em;
+}
+
+.pagination .next {
+    float: left;
+}
+
+.pagination .prev {
+    float: right;
+}
