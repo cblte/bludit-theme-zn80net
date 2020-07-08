@@ -30,7 +30,7 @@ body {
 
 header {
     margin: auto;
-    display: inline-block;
+    display: block;
 }
 
 main {
