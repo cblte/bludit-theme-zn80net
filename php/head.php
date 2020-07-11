@@ -10,7 +10,7 @@
 
   <!-- Load Bludit Plugins: Site head -->
   <?php Theme::plugins('siteHead'); ?>
-  <?php echo Theme::css('css/style-clrs_cc.css'); ?>
+  <?php echo Theme::css('css/style.css'); ?>
   
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">

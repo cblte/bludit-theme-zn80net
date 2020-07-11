@@ -10,6 +10,7 @@ Inspired by
 - http://bettermotherfuckingwebsite.com/
 - https://perfectmotherfuckingwebsite.com/
 - https://thebestmotherfucking.website
+- color inspiration from http://clrs.cc
 */
 
 html {
@@ -21,8 +22,10 @@ body {
     margin: 0 auto;
     padding: 0;
     font: 1.125em/1.5 'Avenir Next', 'Helvetica Neue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #30302F;
-    background-color: #F4F4F2;
+    /* NAVY */
+    color: #111111;
+    /* WHITE */
+    background-color: #FFFFFF;
 }
 
 
@@ -63,14 +66,19 @@ blockquote {
     font-style: italic;
 }
 
-a,
-a:visited {
-    color: #E71D36;
-    ;
+a {
+    color: #FF4136;
+    text-decoration: none;
+    transition: color .4s;
+}
+
+a:active {
+    transition: color .3s;
 }
 
 a:hover {
-    color: #E71D36;
+    color: #FF4136;
+    text-decoration: underline;
 }
 
 
@@ -80,14 +88,14 @@ a:hover {
 /* LOOKING GOOD */
 
 .site-header {
-    background-color: #011627;
-    border-bottom: 0.3em solid #E71D36;
+    background-color: #001f3f;
+    border-bottom: 0.3em solid #FF4136;
     padding: 0 1em 1em 1em;
     margin-bottom: 2em;
 }
 
 .site-branding {
-    max-width: 640px;
+    max-width: 40rem;
     margin: auto;
 }
 
@@ -98,16 +106,18 @@ a:hover {
     font-size: 2em;
 }
 
-.site-title a {
+.site-title a,
+.site-title a:hover,
+.site-title a:visited {
     text-decoration: none;
-    color: #E71D36;
+    color: #FF4136;
 }
 
 .site-slogan {
-    max-width: 400px;
+    max-width: 20rem;
     padding: 0;
     margin: 0;
-    color: #2EC4B6;
+    color: #FFFFFF;
 }
 
 
@@ -117,7 +127,7 @@ a:hover {
 /* SITE NAVIGATION */
 
 .site-navigation {
-    max-width: 640px;
+    max-width: 40rem;
     margin: auto;
 }
 
@@ -128,7 +138,6 @@ a:hover {
 
 .site-static-link,
 .site-social-link {
-    font-size: 0.8em;
     text-decoration: none;
     margin-right: 1em;
 }
@@ -179,7 +188,7 @@ article.link h2 a,
 article.link h2 a:visited,
 article.link h2 a:hover {
     text-decoration: underline;
-    color: #E71D36;
+    color: #FF4136;
 }
 
 article cite {
@@ -248,4 +257,21 @@ article embetty-tweet {
 
 .pagination .prev {
     float: right;
+}
+
+@media (max-width: 1200px) {
+    article img.coverImage {
+        margin-left: calc((100vw - 640px) / -2);
+        max-width: 100vw;
+    }
+}
+
+
+/* 500-pixel layout for smaller screens */
+
+@media (max-width: 680px) {
+    article img.coverImage {
+        margin-left: -15px;
+        max-width: 100vw;
+    }
 }
